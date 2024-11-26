@@ -182,7 +182,7 @@ runs:
       id: upload-artifacts
       if: steps.export-paths.outputs.artifact_paths != ''
       continue-on-error: true
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       env:
         GITHUB_TOKEN: ${{ inputs.github-token }}
       with:
